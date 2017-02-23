@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPJ Coding Test</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="SPJFiddler.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="SPJFiddler.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<div class="continer">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">SPJViewer</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div style="margin:auto;text-align:center;">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input data-showhide="html" type="checkbox" checked autocomplete="off"> HTML
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input data-showhide="css" type="checkbox" autocomplete="off"> CSS
+                    </label>
+                    <label class="btn btn-secondary active" style="margin-right:160px;">
+                        <input data-showhide="output" type="checkbox" checked autocomplete="off"> Output
+                    </label>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- SPJ FIDDLER MODULE -->
+    <div class="row" id="fiddler_container">
+        <div data-fiddler-frame="html" class="col"></div>
+        <div data-fiddler-frame="css" class="col"></div>
+        <div data-fiddler-frame="output" class="col"></div>
+    </div>
+
+</div>
+</body>
+</html>

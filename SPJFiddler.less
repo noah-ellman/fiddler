@@ -1,0 +1,44 @@
+/*
+  CSS Rules for SPJFiddler module
+  Compiles with LESS
+*/
+
+@container: #fiddler_container;
+
+@{container} {
+  width: 100%;
+  margin:0px;
+  padding:0px;
+
+  [data-fiddler-frame] {
+    height:auto;
+    margin:0;
+    padding:0;
+    border: 1px solid #eee;
+    &:hover {
+      border:1px solid #269abc;
+      transition: 1s;
+    }
+  }
+
+  textarea, iframe {
+    width: 100%;
+    height:auto;
+    min-height:200px;
+    margin: 0px;
+    border: 0px;
+    overflow: visible;
+  }
+
+  textarea {
+    padding: 10px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    outline: none;
+    color: black;
+    &.has-error {
+      color: red;
+    }
+  }
+
+}
