@@ -1,6 +1,3 @@
-// THIS IS GENERATED FILE
-// THE ACTUAL CODE IS IN THE TYPESCRIPT FILE
-
 var SPJFiddler = (function () {
     function SPJFiddler(userOptions) {
         var _this = this;

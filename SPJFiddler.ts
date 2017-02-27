@@ -21,6 +21,7 @@
  * @requires jquery
  */
 
+
 class SPJFiddler {
 
     html_frame: HTMLElement;
